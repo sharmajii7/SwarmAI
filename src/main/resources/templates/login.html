@@ -75,10 +75,17 @@
                             <span> Not registered ?
                                 <a th:href="@{/register}">Register/Signup here</a>
                             </span>
+                            <span> Chat ?
+                                <a th:href="@{/chat}">Chat here</a>
+                            </span>
                         </div>
                     </form>
                 </div>
             </div>
+            <form action="/rooms/join" method="get">
+                <input type="text" name="roomCode" placeholder="Enter Room Code" required>
+                <button type="submit">Join Room</button>
+            </form>
         </div>
     </div>
 </div>
